@@ -1,0 +1,92 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #0f1c2b;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 8px;
+}
+
+.container section {
+    display: flex;
+    width: calc(25% - 6px);
+    aspect-ratio: 1;
+    padding: 14px;
+    background-color: #14304a;
+    border: 1px solid #2a4a68;
+    border-radius: 8px;
+}
+
+.caixinhas {
+    width: 26px;
+    height: 26px;
+    border-radius: 6px;
+}
+
+.caixinhas:nth-child(1) {
+    background-color: #8ecbff;
+}
+
+.caixinhas:nth-child(2) {
+    background-color: #55a8ee;
+}
+
+.caixinhas:nth-child(3) {
+    background-color: #3585d0;
+}
+
+.caixinhas:nth-child(4) {
+    background-color: #26609f;
+}
+
+.cubo1 {
+    gap: 8px;
+}
+
+.cubo2 {
+    flex-direction: column-reverse;
+    gap: 4px;
+}
+
+.cubo3 {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cubo4 {
+    justify-content: center;
+    align-items: center;
+}
+
+.cubo5 {
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.cubo6 .caixinhas:nth-child(2) {
+    flex: 1;
+}
+
+.cubo7 .caixinhas:nth-child(3) {
+    background-color: #ffffff;
+}
+
+.cubo8 {
+    flex-wrap: wrap;
+    align-content: flex-start;
+    gap: 16px 0;
+}
+
+.cubo8 .caixinhas {
+    width: 50%;
+    height: 52px;
+}
